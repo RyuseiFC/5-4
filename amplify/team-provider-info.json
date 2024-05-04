@@ -17,6 +17,12 @@
       },
       "auth": {
         "nextamplifiedc8ae275f": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dd5lkmtzwyzm4",
+          "type": "cicd"
+        }
       }
     }
   }

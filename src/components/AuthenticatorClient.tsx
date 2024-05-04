@@ -10,5 +10,5 @@ export default function AuthenticatorClient() {
     redirectPath: "/todos",
   });
 
-  return <Authenticator />;
+  return <Authenticator hideSignUp={true} />;
 }
