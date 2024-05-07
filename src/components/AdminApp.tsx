@@ -3,6 +3,7 @@
 import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
 import jsonServerProvider from "ra-data-json-server";
 import { MyLayout } from "@/CutomAppBar";
+import Map from "./Map";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
@@ -11,7 +12,8 @@ const AdminApp = () => (
     <Resource
       name="users"
       list={ListGuesser}
-      edit={EditGuesser}
+      edit={Map}
+      create={<div>作成画面</div>}
       recordRepresentation="name"
     />
   </Admin>
